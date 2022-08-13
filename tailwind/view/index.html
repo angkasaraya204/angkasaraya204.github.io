@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Portofolio TailwindCss">
+    <meta name="description" content="Created by Angkasa Raya">
+    <meta name="keywords" content="tailwind, angkasaraya, angkasa, raya, angkasa204, github, darkmode, responsive">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="angkasaraya204">
+    <link rel="stylesheet" href="css/output.css">
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script src="https://right-distinct.tailwindui.com/script.js" data-site="SOXJJCZQ" data-auto="false" defer></script>
+    <script src="../public/js/darkmode.js"></script>
+    <title>Portofolio TailwindCss</title>
+
+    <style>
+        #checkbox:checked + label .switch-ball{
+            background-color: white;
+            transform: translateX(24px);
+            transition: transform 0.3s linear;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-50 dark:bg-slate-900 dark:text-white">
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <!-- <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+        <div class="fixed z-10 inset-0 overflow-y-auto">
+            <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+                <div
+                    class="relative bg-white rounded-lg text-left overflow-shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full">
+                    <div class="p-3 -mx-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                        <button type="button"
+                            class="mt-3 w-full inline-flex justify-center rounded-md px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg></button>
+                    </div>
+                    <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center space-y-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:h-10 sm:w-10 mx-56">
+                            <svg class="h-6 w-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                        </div>
+                        <div class="mt-3 sm:mt-0 sm:ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Deactivate
+                                account</h3>
+                            <div class="mt-2 mb-3">
+                                <p class="text-sm text-gray-500">Are you sure you want to deactivate your account?
+                                    All of your data will be permanently removed. This action cannot be undone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Navbar -->
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <section id="navbar">
+        <div class="z-40">
+            <div class="max-w-7xl md:mx-28 px-8 sm:px-6 md:visible invisible">
+                <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="#" class="text-lg font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Angkasa Raya</a>
+                    </div>
+                    <nav class="md:flex space-x-6">
+                        <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">About</a>
+                        <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Skills</a>
+                        <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Services</a>
+                        <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Portofolio</a>
+                        <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Contactme</a>
+                        <div class="flex justify-end items-center space-x-2 mx-auto relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            <div>
+                                <input type="checkbox" name="switch-ball" id="checkbox" class="hidden switch-ball" />
+                                <label for="checkbox" class="cursor-pointer">
+                                    <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p2">
+                                        <div class="w-4 h-4 bg-white rounded-full shadow"></div>
+                                    </div>
+                                </label>
+                            </div>
+                            <svg id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                    <div class="pt-5 pb-6 px-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <a href="#" class="text-lg font-medium text-gray-900 hover:text-violet-700">Angkasa
+                                    Raya</a>
+                            </div>
+                            <div>
+                                <div class="flex justify-end items-center space-x-2 mx-auto relative dark:text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                    <div>
+                                        <input type="checkbox" name="" id="checkbox" class="hidden" />
+                                        <label for="checkbox" class="cursor-pointer">
+                                            <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p2">
+                                                <div class="w-4 h-4 bg-white rounded-full shadow"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <svg id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="-mr-2">
+                                <div id="hamburger" name="hamburger" type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Close menu</span>
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-6 px-5 space-y-6" id="nav-menu">
+                        <div class="grid gap-y-5 gap-x-4">
+                            <a href="#" class="text-center font-medium text-gray-900 hover:text-violet-700">About</a>
+                            <a href="#" class="text-center font-medium text-gray-900 hover:text-violet-700">Skills</a>
+                            <a href="#" class="text-center font-medium text-gray-900 hover:text-violet-700">Services</a>
+                            <a href="#"
+                                class="text-center font-medium text-gray-900 hover:text-violet-700">Portofolio</a>
+                            <a href="#"
+                                class="text-center font-medium text-gray-900 hover:text-violet-700">Contactme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <section id="about">
+        <div class="md:mt-28 -mt-20">
+            <div class="flex justify-center max-w-7xl sm:mx-40 px-8 sm:px-6">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-3 ">
+                    <div class="md:mt-14 flex flex-col space-y-4 md:visible invisible">
+                        <a href="https://github.com/angkasaraya204">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-white dark:rounded-full" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-white dark:rounded-full" width="24" height="24" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-white dark:rounded-full" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                    <div class="md:-ml-52">
+                        <h1 class="text-3xl font-bold">Hi, I`m Angkasa Raya</h1>
+                        <p class="font-semibold text-gray-500 mt-3">Fullstack Developer</p>
+                        <p class="break-words leading-6 font-semibold text-gray-500 mt-2">Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit.sadddddddddddddddddddddddddddddd.</p>
+                        <button class="bg-violet-700 hover:bg-none mt-3 p-3 rounded-md w-32">
+                            <p class="text-neutral-200 text-sm font-semibold">Contact Me</p>
+                        </button>
+                        <div>
+                            <p class="mt-14 font-semibold">Scroll Down</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-cover bg-center md:-ml-28 md:-mt-10 md:visible invisible">
+                            <img src="../public/images/dummy.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="py-12 md:mt-3 -mt-80">
+            <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
+                <div class="text-center">
+                    <h2 class="text-lg text-violet-700 font-semibold">Skills</h2>
+                    <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Gwejh Belum Pro Banget</p>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="py-12">
+            <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
+                <div class="text-center">
+                    <h2 class="text-lg text-violet-700 font-semibold">Service</h2>
+                    <p
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Ini Service Gwejh</p>
+                </div>
+
+                <div class="mt-10">
+                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                        <div class="relative">
+                            <dt>
+                                <div
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Heroicon name: outline/globe-alt -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Competitive exchange rates
+                                </p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
+                                blanditiis ratione.</dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Heroicon name: outline/scale -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">No fees</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
+                                blanditiis ratione.</dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Heroicon name: outline/lightning-bolt -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Transfers are instant</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
+                                blanditiis ratione.</dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <!-- Heroicon name: outline/annotation -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Mobile notifications</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
+                                blanditiis ratione.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio">
+        <div class="py-12">
+            <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
+                <div class="text-center">
+                    <h2 class="text-lg text-violet-700 font-semibold">Portofolio</h2>
+                    <p
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Baru Dikit Bang Projectnya</p>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <div
+                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                                alt="Front of men&#039;s Basic Tee in black."
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                            <div>
+                                <h3 class="text-sm text-gray-700">
+                                    <a href="#">
+                                        <span aria-hidden="true" class="absolute inset-0"></span>
+                                        Basic Tee
+                                    </a>
+                                </h3>
+                                <p class="mt-1 text-sm text-gray-500">Black</p>
+                            </div>
+                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactme">
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="py-12">
+            <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
+                <div class="text-center">
+                    <h2 class="text-lg text-violet-700 font-semibold">Contactme</h2>
+                    <p
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Hubungi Gwejh</p>
+                </div>
+
+                <div class="mt-10">
+                    <form action="">
+                        <div class="w-full lg:w-2/3 lg:mx-auto">
+                            <div class="w-full px-4 mb-4">
+                                <label for="name" class="text-base font-bold text-violet-700">Nama</label>
+                                <input type="text" id="name"
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700">
+                            </div>
+                            <div class="w-full px-4 mb-4">
+                                <label for="email" class="text-base font-bold text-violet-700">Email</label>
+                                <input type="email" id="email"
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700">
+                            </div>
+                            <div class="w-full px-4 mb-4">
+                                <label for="massage" class="text-base font-bold text-violet-700">Pesan</label>
+                                <textarea type="text" id="massage"
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700 h-32"></textarea>
+                            </div>
+                            <div class="w-full px-4">
+                                <button
+                                    class="text-base font-semibold text-white bg-violet-700 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-7xl sm:mx-32 px-8 sm:px-6 mb-5">
+        <div class="flex justify-between">
+            <div class="font-semibold">
+                <div class="grid grid-cols-2 text-1xl mx-3">
+                    <p class="mx-1">Created by</p>
+                    <a href="https://github.com/angkasaraya204">
+                        <p class="text-violet-700 -mx-1">Angkasa Raya</p>
+                    </a>
+                </div>
+            </div>
+            <div class="font-semibold">
+                <div class="grid grid-cols-2 text-1xl -mr-8">
+                    <p>Released &copy;</p>
+                    <p class="text-violet-700">2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const navMenu = document.querySelector('#nav-menu');
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('hamburger-active');
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+    <script>
+        const checkbox = document.querySelector("#checkbox");
+        const html = document.querySelector("html");
+
+        const toggleDarkMode = function () {
+            checkbox.checked
+            ? html.classList.add("dark")
+            : html.classList.remove("dark");
+        }
+
+        toggleDarkMode();
+        checkbox.addEventListener("click",toggleDarkMode);
+    </script>  
+</body>
+
+</html>
