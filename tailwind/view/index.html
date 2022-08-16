@@ -14,8 +14,6 @@
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="angkasaraya204">
     <link rel="stylesheet" href="css/output.css">
-    <script src="../public/js/darkmode.js"></script>
-    <script src="../public/js/hamburger.js"></script>
     <title>Portofolio TailwindCss</title>
 
     <style>
@@ -41,7 +39,7 @@
                     <nav class="md:flex space-x-6">
                         <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">About</a>
                         <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Skills</a>
-                        <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Services</a>
+                        <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Service</a>
                         <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Portofolio</a>
                         <a href="#" class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Contactme</a>
                         <div class="flex justify-end items-center space-x-2 mx-auto relative">
@@ -106,7 +104,7 @@
                         <div class="grid gap-y-5 gap-x-4">
                             <a href="#" class="text-center font-medium text-gray-900 hover:text-violet-700">About</a>
                             <a href="#" class="text-center font-medium text-gray-900 hover:text-violet-700">Skills</a>
-                            <a href="#" class="text-center font-medium text-gray-900 hover:text-violet-700">Services</a>
+                            <a href="#" class="text-center font-medium text-gray-900 hover:text-violet-700">Service</a>
                             <a href="#"
                                 class="text-center font-medium text-gray-900 hover:text-violet-700">Portofolio</a>
                             <a href="#"
@@ -138,8 +136,7 @@
                     <div class="md:-ml-52">
                         <h1 class="text-3xl font-bold">Hi, I`m Angkasa Raya</h1>
                         <p class="font-semibold text-gray-500 mt-3">Fullstack Developer</p>
-                        <p class="break-words leading-6 font-semibold text-gray-500 mt-2">Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit.sadddddddddddddddddddddddddddddd.</p>
+                        <p class="break-words leading-6 font-semibold text-gray-500 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit inventore dignissimos perspiciatis rem dolore eaque assumenda esse soluta debitis nemo obcaecati maxime nesciunt est totam architecto sed, ducimus ipsa explicabo.</p>
                         <button class="bg-violet-700 hover:bg-none mt-3 p-3 rounded-md w-32">
                             <p class="text-neutral-200 text-sm font-semibold">Contact Me</p>
                         </button>
@@ -162,8 +159,7 @@
             <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Skills</h2>
-                    <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
-                        Gwejh Belum Pro Banget</p>
+                    <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Maaf Belum Ada</p>
                 </div>
 
                 <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -259,8 +255,7 @@
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Service</h2>
                     <p
-                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
-                        Ini Service Gwejh</p>
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Maaf Belum Ada</p>
                 </div>
 
                 <div class="mt-10">
@@ -349,8 +344,7 @@
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Portofolio</h2>
                     <p
-                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
-                        Baru Dikit Bang Projectnya</p>
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Maaf Belum Ada</p>
                 </div>
 
                 <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -446,8 +440,7 @@
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Contactme</h2>
                     <p
-                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
-                        Hubungi Gwejh</p>
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Segera Hubungi</p>
                 </div>
 
                 <div class="mt-10">
@@ -497,6 +490,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const checkbox = document.querySelector("#checkbox");
+        const html = document.querySelector("html");
+
+        const toggleDarkMode = function () {
+            checkbox.checked ?
+                html.classList.add("dark") :
+                html.classList.remove("dark");
+        }
+
+        toggleDarkMode();
+        checkbox.addEventListener("click", toggleDarkMode);
+
+        const hamburger = document.querySelector('#hamburger');
+        const navMenu = document.querySelector('#nav-menu');
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('hamburger-active');
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
