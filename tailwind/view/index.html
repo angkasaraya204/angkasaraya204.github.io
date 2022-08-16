@@ -136,7 +136,9 @@
                     <div class="md:-ml-52">
                         <h1 class="text-3xl font-bold">Hi, I`m Angkasa Raya</h1>
                         <p class="font-semibold text-gray-500 mt-3">Fullstack Developer</p>
-                        <p class="break-words leading-6 font-semibold text-gray-500 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit inventore dignissimos perspiciatis rem dolore eaque assumenda esse soluta debitis nemo obcaecati maxime nesciunt est totam architecto sed, ducimus ipsa explicabo.</p>
+                        <div class="md:break-before-column">
+                            <p class="break-words leading-6 font-semibold text-gray-500 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem facilis aut saepe earum ut error aliquid molestiae nobis doloribus ex minima ipsa repellendus nisi, iusto quasi dolore? Totam, reprehenderit dolore!</p>
+                        </div>
                         <button class="bg-violet-700 hover:bg-none mt-3 p-3 rounded-md w-32">
                             <p class="text-neutral-200 text-sm font-semibold">Contact Me</p>
                         </button>
@@ -159,7 +161,8 @@
             <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Skills</h2>
-                    <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Maaf Belum Ada</p>
+                    <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Gwejh Belum Pro Banget</p>
                 </div>
 
                 <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -255,7 +258,8 @@
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Service</h2>
                     <p
-                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Maaf Belum Ada</p>
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Ini Service Gwejh</p>
                 </div>
 
                 <div class="mt-10">
@@ -344,7 +348,8 @@
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Portofolio</h2>
                     <p
-                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Maaf Belum Ada</p>
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Baru Dikit Bang Projectnya</p>
                 </div>
 
                 <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -440,7 +445,8 @@
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Contactme</h2>
                     <p
-                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">Segera Hubungi</p>
+                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                        Hubungi Gwejh</p>
                 </div>
 
                 <div class="mt-10">
@@ -492,16 +498,6 @@
     </div>
 
     <script>
-        window.onscroll = function() {
-            const header = document.querySelector('header');
-            const fixedNav = header.offsetTop;
-
-            if (window.pageYOffset > fixedNav) {
-                header.classList.add('navbar-fixed');
-            } else {
-                header.classList.remove('navbar-fixed');
-            }
-        }
         const hamburger = document.querySelector('#hamburger');
         const navMenu = document.querySelector('#nav-menu');
         hamburger.addEventListener('click', function () {
@@ -514,11 +510,14 @@
         const html = document.querySelector("html");
 
         const toggleDarkMode = function () {
-            checkbox.checked ?
-                html.classList.add("dark") :
-                html.classList.remove("dark");
+            checkbox.checked
+            ? html.classList.add("dark")
+            : html.classList.remove("dark");
         }
-    </script>
+
+        toggleDarkMode();
+        checkbox.addEventListener("click",toggleDarkMode);
+    </script>  
 </body>
 
 </html>
