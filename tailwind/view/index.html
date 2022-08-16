@@ -492,15 +492,6 @@
     </div>
 
     <script>
-        const checkbox = document.querySelector("#checkbox");
-        const html = document.querySelector("html");
-
-        const toggleDarkMode = function () {
-            checkbox.checked ?
-                html.classList.add("dark") :
-                html.classList.remove("dark");
-        }
-
         toggleDarkMode();
         checkbox.addEventListener("click", toggleDarkMode);
 
@@ -510,6 +501,16 @@
             hamburger.classList.toggle('hamburger-active');
             navMenu.classList.toggle('hidden');
         });
+    </script>
+    <script>
+        const checkbox = document.querySelector("#checkbox");
+        const html = document.querySelector("html");
+
+        const toggleDarkMode = function () {
+            checkbox.checked ?
+                html.classList.add("dark") :
+                html.classList.remove("dark");
+        }
     </script>
 </body>
 
