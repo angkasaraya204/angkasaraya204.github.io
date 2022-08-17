@@ -15,6 +15,8 @@
     <meta name="author" content="angkasaraya204">
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/jquery.skeleton.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Portofolio TailwindCss</title>
 
     <style>
@@ -26,7 +28,9 @@
     </style>
 </head>
 
-<body class="bg-zinc-50 dark:bg-slate-900 dark:text-white">
+<body class="bg-zinc-50 dark:bg-slate-900 dark:text-white" id="skeleton">
+
+    <!-- <div class="demo"></div> -->
 
     <!-- Navbar -->
     <!-- This example requires Tailwind CSS v2.0+ -->
@@ -67,7 +71,7 @@
         </header>
 
         <!-- Mobile -->
-        <div class="top-0 p-2 transition transform origin-top-right md:hidden fixed inset-x-0 z-40">
+        <div class="top-0 p-2 origin-top-right md:hidden fixed inset-x-0 z-40">
             <header class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div class="flex items-center justify-between pt-5 pb-6 px-5">
                     <a href="#" class="text-lg font-medium text-gray-900 hover:text-violet-700">Angkasa Raya</a>
@@ -134,8 +138,8 @@
                     <div class="md:-ml-52">
                         <h1 class="text-3xl font-bold">Hi, I`m Angkasa Raya</h1>
                         <p class="font-semibold text-gray-500 mt-3">Fullstack Developer</p>
-                        <p class="leading-6 font-semibold text-gray-500 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem facilis aut saepe earum ut error aliquid molestiae nobis doloribus ex minima ipsa repellendus nisi, iusto quasi dolore? Totam, reprehenderit dolore!</p>
-                        <button class="bg-violet-700 hover:bg-none mt-3 p-3 rounded-md w-32">
+                        <p class="leading-6 font-semibold text-gray-500 mt-2">I am a junior programmer, this is a portfolio that I made using tailwindcss. Sorry it's not very good and it's still empty, the purpose is just to learn. When this is actually used, I will complete everything. For now it is still in the development stage.</p>
+                        <button class="bg-violet-700 hover:bg-none mt-6 p-3 rounded-md w-32">
                             <p class="text-neutral-200 text-sm font-semibold">Contact Me</p>
                         </button>
                         <div>
@@ -179,7 +183,7 @@
                                 <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Framework</p>
                             </dt>
                             <dd class="mt-2 ml-16">
-                                <div class="flex justify-between mb-2">
+                                <div class="flex justify-between mb-2 w-full divide-y-8 divide-yellow-300">
                                     <span class="text-base font-medium text-blue-700 dark:text-white">Laravel</span>
                                     <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
                                 </div>
@@ -425,7 +429,7 @@
         </div>
     </section>
 
-    <section id="contactme">
+    <section id="contact">
         <!-- This example requires Tailwind CSS v2.0+ -->
         <div class="py-12">
             <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
@@ -440,9 +444,9 @@
                     <form action="">
                         <div class="w-full lg:w-2/3 lg:mx-auto">
                             <div class="w-full px-4 mb-4">
-                                <label for="name" class="text-base font-bold text-violet-700">FullName</label>
+                                <label for="name" class="text-base font-bold text-violet-700">Full Name</label>
                                 <input type="text" id="name"
-                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700" placeholder="Insert Your FullName">
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700" placeholder="Insert Your Full Name">
                             </div>
                             <div class="w-full px-4 mb-4">
                                 <label for="email" class="text-base font-bold text-violet-700">Email</label>
@@ -484,6 +488,7 @@
         </div>
     </div>
 
+    <script src="js/jquery.scheletrone.js"></script>
     <script>
         const hamburger = document.querySelector('button.hamburger');
         const navMenu = document.querySelector('#nav-menu');
@@ -491,6 +496,21 @@
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('hidden');
         });
+    </script>
+    <script>
+        $(function() {
+            var instance = $('#skeletone').scheletrone({
+                url : "index.html",
+                debug : {
+                    latency: 3000
+                },
+                incache: false,
+                onComplete: function() {
+                    console.info('plugin is loaded')
+                    console.info('wait 3 secs for the data');
+                }
+            });
+        })
     </script>
     <script>
         const checkbox = document.querySelector("#toogle-ball");

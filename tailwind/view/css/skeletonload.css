@@ -1,0 +1,26 @@
+.loading {
+    position: relative;
+    overflow: hidden;
+    background-color: #eff1f6;
+    
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background: linear-gradient(0.25turn, transparent, #fff, transparent),
+    linear-gradient(#eee, #eee),
+    radial-gradient(38px circle at 19px 19px, #eee 50%, transparent 51%),
+    linear-gradient(#eee, #eee); 
+        animation: loading 3s infinite;
+        content: '';
+    }
+}
+
+@keyframes loading {
+    100% {
+        transform: translateX(100%);
+    }
+}
