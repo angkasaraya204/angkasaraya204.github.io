@@ -1,26 +1,100 @@
-.loading {
-    position: relative;
-    overflow: hidden;
-    background-color: #eff1f6;
-    
-    &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform: translateX(-100%);
-        background: linear-gradient(0.25turn, transparent, #fff, transparent),
-    linear-gradient(#eee, #eee),
-    radial-gradient(38px circle at 19px 19px, #eee 50%, transparent 51%),
-    linear-gradient(#eee, #eee); 
-        animation: loading 3s infinite;
-        content: '';
-    }
+/* About */
+
+/* About Avatar */
+.content-about.skeleton .heroImg {
+    display: none;
 }
 
-@keyframes loading {
-    100% {
-        transform: translateX(100%);
-    }
+.content-about.skeleton .coverHero::after {
+    content: "";
+    position: absolute;
+    background: #e2e2e2;
+    width: 23%;
+    height: 285px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+
+/* About Sosmed */
+.content-about.skeleton .sosmedImg {
+    display: none;
+}
+
+.content-about.skeleton .coverSosmed::after {
+    content: "";
+    position: absolute;
+    background: #e2e2e2;
+    width: 2%;
+    height: 103px;
+    margin-left: -2px;
+    border-radius: 5px;
+}
+
+/* About Teks */
+.content-about.skeleton .hide-about {
+    background: #e2e2e2;
+    color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-about.skeleton .hide-about::before {
+    content: "";
+}
+
+/* Skills */
+.content-skills.skeleton .hide-skills {
+    background: #e2e2e2;
+    color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-skills.skeleton .hide-skills::before {
+    content: "";
+}
+
+/* Portofolio */
+.content-porto.skeleton .portoImg {
+    display: none;
+}
+
+.content-porto.skeleton .coverPorto::after {
+    content: "";
+    position: absolute;
+    background: #e2e2e2;
+    width: 100%;
+    height: 313px;
+    margin-left: -2px;
+    border-radius: 5px;
+}
+
+.content-porto.skeleton .hide-porto {
+    background: #e2e2e2;
+    color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-porto.skeleton .hide-porto::before {
+    content: "";
+}
+
+/* Contact Me */
+.content-contact.skeleton .hide-contact {
+    background: #e2e2e2;
+    color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-contact.skeleton .hide-contact::before {
+    content: "";
 }

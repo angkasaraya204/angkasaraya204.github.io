@@ -14,9 +14,8 @@
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="angkasaraya204">
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/skeletonload.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <link rel="stylesheet" href="css/jquery.skeleton.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Portofolio TailwindCss</title>
 
     <style>
@@ -28,7 +27,7 @@
     </style>
 </head>
 
-<body class="bg-zinc-50 dark:bg-slate-900 dark:text-white" id="skeleton">
+<body class="bg-zinc-50 dark:bg-slate-900 dark:text-white">
 
     <!-- <div class="demo"></div> -->
 
@@ -52,19 +51,22 @@
                 <a href="#contact"
                     class="text-base font-medium text-gray-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-700">Contact</a>
                 <div class="flex justify-end items-center space-x-2 mx-auto relative">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                     <div>
-                        <input type="checkbox" name="switch-ball" id="checkbox" class="hidden switch-ball" />
-                        <label for="checkbox" class="cursor-pointer">
-                            <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p2">
-                                <div class="w-4 h-4 bg-white rounded-full shadow"></div>
-                            </div>
+                        <label for="toogle-ball" class="cursor-pointer">
+                            <input type="checkbox" id="toogle-ball" class="sr-only" />
+                            <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-2"></div>
+                            <div class="switch-ball w-4 h-4 bg-white rounded-full shadow" style="margin-top: -18px;"></div>
                         </label>
                     </div>
-                    <svg id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    <svg id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                     </svg>
                 </div>
             </nav>
@@ -83,7 +85,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="py-6 px-5 space-y-6" id="nav-menu">
+                <div class="py-6 px-5 space-y-6 hidden" id="nav-menu">
                     <div class="grid gap-y-5 gap-x-4">
                         <a href="#about"
                             class="text-center font-medium text-gray-900 hover:text-violet-700">About</a>
@@ -94,7 +96,7 @@
                         <a href="#contact"
                             class="text-center font-medium text-gray-900 hover:text-violet-700">Contact</a>
                     </div>
-                    <div class="flex justify-center space-x-2 sm:-ml-10 dark:text-black">
+                    <div class="flex justify-center space-x-2 dark:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -123,32 +125,34 @@
     <section id="about">
         <div class="md:mt-28 -mt-20">
             <div class="sm:mx-40 px-8 sm:px-6">
-                <div class="md:grid md:grid-cols-3 gap-3">
-                    <div class="md:mt-14 flex flex-col space-y-4 md:visible invisible">
-                        <a href="https://github.com/angkasaraya204">
+                <div class="md:grid md:grid-cols-3 gap-3 content-about skeleton">
+                    <div class="md:mt-14 flex flex-col space-y-4 md:visible invisible coverSosmed">
+                        <a class="sosmedImg" href="https://github.com/angkasaraya204">
                             <svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-white dark:rounded-full" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         </a>
-                        <a href="">
+                        <a class="sosmedImg" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-white dark:rounded-full" width="24" height="24" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
                         </a>
-                        <a href="">
+                        <a class="sosmedImg" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="dark:bg-white dark:rounded-full" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
                     </div>
                     <div class="md:-ml-52">
-                        <h1 class="text-3xl font-bold">Hi, I`m Angkasa Raya</h1>
-                        <p class="font-semibold text-gray-500 mt-3">Fullstack Developer</p>
-                        <p class="leading-6 font-semibold text-gray-500 mt-2">I am a junior programmer, this is a portfolio that I made using tailwindcss. Sorry it's not very good and it's still empty, the purpose is just to learn. When this is actually used, I will complete everything. For now it is still in the development stage.</p>
-                        <button class="bg-violet-700 hover:bg-none mt-6 p-3 rounded-md w-32">
-                            <p class="text-neutral-200 text-sm font-semibold">Contact Me</p>
-                        </button>
+                        <h1 class="text-3xl font-bold hide-about">Hi, I`m Angkasa Raya</h1>
+                        <p class="font-semibold text-gray-500 mt-3 hide-about">Fullstack Developer</p>
+                        <p class="font-semibold text-gray-500 mt-2 hide-about">A junior programmer, this is a portfolio that I made using tailwindcss. Sorry it's not very good and it's still empty, the purpose is just to learn. When this is actually used, I will complete everything. For now it is still in the development stage.</p>
+                        <div>
+                            <button class="bg-violet-700 hover:bg-none mt-6 p-3 rounded-md w-32 hide-about">
+                                <p class="text-neutral-200 text-sm font-semibold">Contact Me</p>
+                            </button>
+                        </div>
                         <div>
                             <p class="mt-14 font-semibold invisible"></p>
                         </div>
                     </div>
                     <div>
-                        <div class="bg-cover bg-center md:-mt-10 md:visible invisible">
-                            <img src="../public/images/dummy.png">
+                        <div class="bg-cover bg-center md:-mt-10 md:visible invisible coverHero">
+                            <img class="heroImg" src="../public/images/dummy.png">
                         </div>
                     </div>
                 </div>
@@ -168,55 +172,54 @@
                 </div>
 
                 <div class="mt-10">
-                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 content-skills skeleton">
                         <div class="relative">
                             <dt>
                                 <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-violet-700 text-white hide-skills">
                                     <!-- Heroicon name: outline/globe-alt -->
                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                                     </svg>
                                 </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Framework</p>
+                                <p class="ml-16 text-lg font-medium text-gray-900 dark:text-white mb-2 hide-skills">Framework</p>
                             </dt>
-                            <dd class="mt-2 ml-16">
-                                <div class="flex justify-between mb-2 w-full divide-y-8 divide-yellow-300">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Laravel</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
-                                </div>
-                                <!-- <div class="w-2/4 bg-gray-200 rounded-md h-screen">
-                                    <div class="text-sm font-semibold text-center"> 50%</div>
-                                </div> -->
-                                <div class="flex justify-between mb-72">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Bootstrap</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
+                            <dd class="ml-16 space-y-4">
+                                <div class="flex justify-between">
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Laravel</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
                                 </div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Tailwind</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
-                                </div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">ReactJs</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Newbie</span>
+                                <div class="flex justify-between">
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Bootstrap</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
                                 </div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Bulma</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Newbie</span>
+                                <div class="flex justify-between">
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Tailwind</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">ReactJs</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Newbie</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 15%"></div>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Bulma</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Newbie</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                    <div class="h-2.5 rounded-full hide-skills"></div>
                                 </div>
                             </dd>
                         </div>
@@ -224,7 +227,7 @@
                         <div class="relative">
                             <dt>
                                 <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-violet-700 text-white hide-skills">
                                     <!-- Heroicon name: outline/scale -->
                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
@@ -232,22 +235,22 @@
                                             d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                                     </svg>
                                 </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Database</p>
+                                <p class="ml-16 text-lg font-medium text-gray-900 dark:text-white mb-2 hide-skills">Database</p>
                             </dt>
-                            <dd class="mt-2 ml-16">
+                            <dd class="ml-16 space-y-4">
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">MySQL</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">MySQL</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
                                 </div>
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">HeidiSQL</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">HeidiSQL</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
                                 </div>
                             </dd>
                         </div>
@@ -255,7 +258,7 @@
                         <div class="relative">
                             <dt>
                                 <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-violet-700 text-white hide-skills">
                                     <!-- Heroicon name: outline/lightning-bolt -->
                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
@@ -263,29 +266,29 @@
                                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
                                 </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Language</p>
+                                <p class="ml-16 text-lg font-medium text-gray-900 dark:text-white mb-2 hide-skills">Language</p>
                             </dt>
-                            <dd class="mt-2 ml-16">
+                            <dd class="ml-16 space-y-4">
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Php</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Php</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
                                 </div>
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Css</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Css</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
                                 </div>
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Javascript</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Javascript</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 30%"></div>
                                 </div>
                             </dd>
                         </div>
@@ -293,7 +296,7 @@
                         <div class="relative">
                             <dt>
                                 <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-violet-700 text-white hide-skills">
                                     <!-- Heroicon name: outline/annotation -->
                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
@@ -301,29 +304,29 @@
                                             d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
                                     </svg>
                                 </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">CMS</p>
+                                <p class="ml-16 text-lg font-medium text-gray-900 dark:text-white mb-2 hide-skills">CMS</p>
                             </dt>
-                            <dd class="mt-2 ml-16">
+                            <dd class="ml-16 space-y-4">
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Wordpress</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Middle</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Wordpress</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Middle</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 50%"></div>
                                 </div>
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Joomla</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Newbie</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Joomla</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Newbie</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 15%"></div>
                                 </div>
                                 <div class="flex justify-between mb-2">
-                                    <span class="text-base font-medium text-blue-700 dark:text-white">Drupal</span>
-                                    <span class="text-sm font-medium text-blue-700 dark:text-white">Newbie</span>
+                                    <span class="text-base font-medium text-violet-700 dark:text-white hide-skills">Drupal</span>
+                                    <span class="text-sm font-medium text-violet-700 dark:text-white hide-skills">Newbie</span>
                                 </div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                                    <div class="bg-violet-700 h-2.5 rounded-full hide-skills" style="width: 15%"></div>
                                 </div>
                             </dd>
                         </div>
@@ -343,85 +346,57 @@
                         My Portofolio</p>
                 </div>
 
-                <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 animate-pulse">
+                <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 content-porto skeleton">
                     <div class="group relative">
-                        <div
-                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                                alt="Front of men&#039;s Basic Tee in black."
-                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none coverPorto">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full portoImg">
                         </div>
-                        <div class="mt-4 flex justify-between">
-                            <div>
-                                <h3 class="text-sm text-gray-700">
-                                    <a href="#">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Basic Tee
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Black</p>
-                            </div>
-                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        <div>
+                            <p class="text-lg text-bold text-gray-700 text-center hide-porto mt-3 dark:text-white">
+                                <a href="#">
+                                    Basic Tee
+                                </a>
+                            </p>
+                            <p class="mt-3 text-md text-semibold text-gray-500 hide-porto leading-relaxed text-center dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="group relative">
-                        <div
-                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                                alt="Front of men&#039;s Basic Tee in black."
-                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none coverPorto">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full portoImg">
                         </div>
-                        <div class="mt-4 flex justify-between">
-                            <div>
-                                <h3 class="text-sm text-gray-700">
-                                    <a href="#">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Basic Tee
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Black</p>
-                            </div>
-                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        <div>
+                            <p class="text-lg text-bold text-gray-700 text-center hide-porto mt-3 dark:text-white">
+                                <a href="#">
+                                    Basic Tee
+                                </a>
+                            </p>
+                            <p class="mt-3 text-md text-semibold text-gray-500 hide-porto leading-relaxed text-center dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="group relative">
-                        <div
-                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                                alt="Front of men&#039;s Basic Tee in black."
-                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none coverPorto">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full portoImg">
                         </div>
-                        <div class="mt-4 flex justify-between">
-                            <div>
-                                <h3 class="text-sm text-gray-700">
-                                    <a href="#">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Basic Tee
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Black</p>
-                            </div>
-                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        <div>
+                            <p class="text-lg text-bold text-gray-700 text-center hide-porto mt-3 dark:text-white">
+                                <a href="#">
+                                    Basic Tee
+                                </a>
+                            </p>
+                            <p class="mt-3 text-md text-semibold text-gray-500 hide-porto leading-relaxed text-center dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="group relative">
-                        <div
-                            class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                                alt="Front of men&#039;s Basic Tee in black."
-                                class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                        <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-group-hover:opacity-75 lg:h-80 lg:aspect-none coverPorto">
+                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full portoImg">
                         </div>
-                        <div class="mt-4 flex justify-between">
-                            <div>
-                                <h3 class="text-sm text-gray-700">
-                                    <a href="#">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Basic Tee
-                                    </a>
-                                </h3>
-                                <p class="mt-1 text-sm text-gray-500">Black</p>
-                            </div>
-                            <p class="text-sm font-medium text-gray-900">$35</p>
+                        <div>
+                            <p class="text-lg text-bold text-gray-700 text-center hide-porto mt-3 dark:text-white">
+                                <a href="#">
+                                    Basic Tee
+                                </a>
+                            </p>
+                            <p class="mt-3 text-md text-semibold text-gray-500 hide-porto leading-relaxed text-center dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
@@ -432,11 +407,10 @@
     <section id="contact">
         <!-- This example requires Tailwind CSS v2.0+ -->
         <div class="py-12">
-            <div class="max-w-7xl sm:mx-28 px-8 sm:px-6">
+            <div class="max-w-7xl sm:mx-28 px-8 sm:px-6 content-contact skeleton">
                 <div class="text-center">
                     <h2 class="text-lg text-violet-700 font-semibold">Contact</h2>
-                    <p
-                        class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
+                    <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight dark:text-white">
                         Contact Me</p>
                 </div>
 
@@ -444,23 +418,20 @@
                     <form action="">
                         <div class="w-full lg:w-2/3 lg:mx-auto">
                             <div class="w-full px-4 mb-4">
-                                <label for="name" class="text-base font-bold text-violet-700">Full Name</label>
-                                <input type="text" id="name"
-                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700" placeholder="Insert Your Full Name">
+                                <label for="name" class="text-base font-bold text-violet-700 hide-contact">Full Name</label>
+                                <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700 hide-contact">
                             </div>
                             <div class="w-full px-4 mb-4">
-                                <label for="email" class="text-base font-bold text-violet-700">Email</label>
-                                <input type="email" id="email"
-                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700" placeholder="Insert Your Email">
+                                <label for="email" class="text-base font-bold text-violet-700 hide-contact">Email</label>
+                                <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700 hide-contact">
                             </div>
                             <div class="w-full px-4 mb-4">
-                                <label for="massage" class="text-base font-bold text-violet-700">Message</label>
+                                <label for="massage" class="text-base font-bold text-violet-700 hide-contact">Message</label>
                                 <textarea type="text" id="massage"
-                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700 h-32" placeholder="Insert Your Message"></textarea>
+                                    class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-violet-700 focus:ring-1 focus:border-violet-700 h-32 hide-contact"></textarea>
                             </div>
                             <div class="w-full px-4">
-                                <button
-                                    class="text-base font-semibold text-white bg-violet-700 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
+                                <button class="text-base font-semibold text-white bg-violet-700 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 hide-contact">Send</button>
                             </div>
                         </div>
                     </form>
@@ -482,13 +453,13 @@
             <div class="font-semibold">
                 <div class="grid grid-cols-2 text-1xl -mr-8">
                     <p>Released &copy;</p>
-                    <p class="text-violet-700">2022</p>
+                    <p class="text-violet-700 mx-1">2022</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="js/jquery.scheletrone.js"></script>
+    <script src="js/skeletonload.js"></script>
     <script>
         const hamburger = document.querySelector('button.hamburger');
         const navMenu = document.querySelector('#nav-menu');
@@ -497,21 +468,7 @@
             navMenu.classList.toggle('hidden');
         });
     </script>
-    <script>
-        $(function() {
-            var instance = $('#skeletone').scheletrone({
-                url : "index.html",
-                debug : {
-                    latency: 3000
-                },
-                incache: false,
-                onComplete: function() {
-                    console.info('plugin is loaded')
-                    console.info('wait 3 secs for the data');
-                }
-            });
-        })
-    </script>
+
     <script>
         const checkbox = document.querySelector("#toogle-ball");
         const html = document.querySelector("html");
