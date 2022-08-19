@@ -1,9 +1,9 @@
 Demo Aplikasinya:
 
 Tanpa Dark Mode:
-![Screenshot (273)](https://user-images.githubusercontent.com/68907186/185695978-679050a1-00fb-4375-aa4a-d40fe83053a0.png)
-![Screenshot (276)](https://user-images.githubusercontent.com/68907186/185696000-b895e064-19a4-499c-9b5b-d48afc0a7fdd.png)
+![Screenshot (277)](https://user-images.githubusercontent.com/68907186/185696913-909843fb-920b-494c-87fe-dff7c3ac6fb7.png)
+![Cuplikan layar 2022-08-20 025644](https://user-images.githubusercontent.com/68907186/185697521-126700cb-1a27-4316-9c19-ba5627b98e0b.jpg)
 
 Dark Mode:
-![Screenshot (275)](https://user-images.githubusercontent.com/68907186/185696026-85f586b8-9da5-4f6b-99cd-b5bddbd40af7.png)
-![Screenshot (274)](https://user-images.githubusercontent.com/68907186/185696033-d257775a-8675-46c5-81f7-cba5c38b8028.png)
+![Cuplikan layar 2022-08-20 025743](https://user-images.githubusercontent.com/68907186/185697673-3fb43f79-1ead-46d5-a64b-b96a75173150.jpg)
+![Cuplikan layar 2022-08-20 025618](https://user-images.githubusercontent.com/68907186/185697531-6b8f9700-dc05-4228-b7eb-8b350a489249.jpg)
