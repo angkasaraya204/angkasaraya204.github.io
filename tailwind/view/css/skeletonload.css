@@ -1,11 +1,11 @@
 /* About */
 
 /* About Avatar */
-.content-about.skeleton .heroImg {
-    display: none;
+.skeleton .heroImg {
+    opacity: 0;
 }
 
-.content-about.skeleton .coverHero::after {
+.skeleton .coverHero::before {
     content: "";
     position: absolute;
     background: #e2e2e2;
@@ -17,11 +17,11 @@
 }
 
 /* About Sosmed */
-.content-about.skeleton .sosmedImg {
-    display: none;
+.skeleton .sosmedImg {
+    opacity: 0;
 }
 
-.content-about.skeleton .coverSosmed::after {
+.skeleton .coverSosmed::after {
     content: "";
     position: absolute;
     background: #e2e2e2;
@@ -32,37 +32,69 @@
 }
 
 /* About Teks */
-.content-about.skeleton .hide-about {
-    background: #e2e2e2;
-    color: transparent;
+.skeleton .hide-about {
+    background: #e2e2e2 !important;
+    color: transparent !important;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    user-select: none;
+    cursor: default;
 }
 
-.content-about.skeleton .hide-about::before {
+.skeleton .hide-about::before {
     content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 20%,
+        rgba(255, 255, 255, 0.5) 60%,
+        rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 2s infinite;
 }
 
 /* Skills */
-.content-skills.skeleton .hide-skills {
-    background: #e2e2e2;
-    color: transparent;
+.skeleton .hide-skills {
+    background: #e2e2e2 !important;
+    color: transparent !important;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    user-select: none;
+    cursor: default;
 }
 
-.content-skills.skeleton .hide-skills::before {
+.skeleton .hide-skills::before {
     content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 20%,
+        rgba(255, 255, 255, 0.5) 60%,
+        rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 2s infinite;
 }
 
 /* Portofolio */
-.content-porto.skeleton .portoImg {
-    display: none;
+.skeleton .portoImg {
+    opacity: 0;
 }
 
-.content-porto.skeleton .coverPorto::after {
+.skeleton .coverPorto::before {
     content: "";
     position: absolute;
     background: #e2e2e2;
@@ -72,29 +104,65 @@
     border-radius: 5px;
 }
 
-.content-porto.skeleton .hide-porto {
-    background: #e2e2e2;
-    color: transparent;
+.skeleton .hide-porto {
+    background: #e2e2e2 !important;
+    color: transparent !important;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    position: relative;
-    overflow: hidden;
+    user-select: none;
+    cursor: default;
 }
 
-.content-porto.skeleton .hide-porto::before {
+.skeleton .hide-porto::before {
     content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 20%,
+        rgba(255, 255, 255, 0.5) 60%,
+        rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 2s infinite;
 }
 
 /* Contact Me */
-.content-contact.skeleton .hide-contact {
-    background: #e2e2e2;
-    color: transparent;
+.skeleton .hide-contact {
+    background: #e2e2e2 !important;
+    color: transparent !important;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    user-select: none;
+    cursor: default;
 }
 
-.content-contact.skeleton .hide-contact::before {
+.skeleton .hide-contact::before {
     content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.2) 20%,
+        rgba(255, 255, 255, 0.5) 60%,
+        rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
 }
