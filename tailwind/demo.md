@@ -1,6 +1,6 @@
 Demo Aplikasinya:
 
-Tanpa Dark Mode:
+Light Mode:
 ![Screenshot (277)](https://user-images.githubusercontent.com/68907186/185696913-909843fb-920b-494c-87fe-dff7c3ac6fb7.png)
 ![Cuplikan layar 2022-08-20 025644](https://user-images.githubusercontent.com/68907186/185697521-126700cb-1a27-4316-9c19-ba5627b98e0b.jpg)
 
